@@ -1,0 +1,20 @@
+pkgbase = tmux-git
+	pkgdesc = tmux built from rodolfovillaruz fork
+	pkgver = r12778.6069d58e
+	pkgrel = 1
+	url = https://github.com/rodolfovillaruz/tmux
+	arch = x86_64
+	license = ISC
+	makedepends = git
+	makedepends = bison
+	makedepends = pkgconf
+	depends = ncurses
+	depends = libevent
+	depends = libutempter
+	depends = systemd-libs
+	provides = tmux
+	conflicts = tmux
+	source = tmux::git+https://github.com/rodolfovillaruz/tmux.git#branch=master
+	sha256sums = SKIP
+
+pkgname = tmux-git
